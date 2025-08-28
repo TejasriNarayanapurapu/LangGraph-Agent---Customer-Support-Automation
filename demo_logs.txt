@@ -1,0 +1,33 @@
+[2025-08-28 10:09:44] === Stage: INTAKE | Mode: deterministic ===
+[2025-08-28 10:09:44] Ability: accept_payload | Server: COMMON
+[2025-08-28 10:09:44] === Stage: UNDERSTAND | Mode: deterministic ===
+[2025-08-28 10:09:44] Ability: parse_request_text | Server: COMMON
+[2025-08-28 10:09:44] Ability: extract_entities | Server: ATLAS
+[2025-08-28 10:09:44] === Stage: PREPARE | Mode: deterministic ===
+[2025-08-28 10:09:44] Ability: normalize_fields | Server: COMMON
+[2025-08-28 10:09:44] Ability: enrich_records | Server: ATLAS
+[2025-08-28 10:09:44] Ability: add_flags_calculations | Server: COMMON
+[2025-08-28 10:09:44] === Stage: ASK | Mode: deterministic ===
+[2025-08-28 10:09:44] Ability: clarify_question | Server: ATLAS
+[2025-08-28 10:09:44] === Stage: WAIT | Mode: deterministic ===
+[2025-08-28 10:09:44] Ability: extract_answer | Server: ATLAS
+[2025-08-28 10:09:44] Ability: store_answer | Server: COMMON
+[2025-08-28 10:09:44] === Stage: RETRIEVE | Mode: deterministic ===
+[2025-08-28 10:09:44] Ability: knowledge_base_search | Server: ATLAS
+[2025-08-28 10:09:44] Ability: store_data | Server: COMMON
+[2025-08-28 10:09:44] === Stage: DECIDE | Mode: non-deterministic ===
+[2025-08-28 10:09:44] Ability: solution_evaluation | Server: COMMON
+[2025-08-28 10:09:44] Decision: solution_score=80 (threshold=90)
+[2025-08-28 10:09:44] Ability: escalation_decision | Server: ATLAS
+[2025-08-28 10:09:44] Ability: update_payload | Server: COMMON
+[2025-08-28 10:09:44] === Stage: UPDATE | Mode: deterministic ===
+[2025-08-28 10:09:44] Ability: update_ticket | Server: ATLAS
+[2025-08-28 10:09:44] Ability: close_ticket | Server: ATLAS
+[2025-08-28 10:09:44] === Stage: CREATE | Mode: deterministic ===
+[2025-08-28 10:09:44] Ability: response_generation | Server: COMMON
+[2025-08-28 10:09:44] === Stage: DO | Mode: deterministic ===
+[2025-08-28 10:09:44] Ability: execute_api_calls | Server: ATLAS
+[2025-08-28 10:09:44] Ability: trigger_notifications | Server: ATLAS
+[2025-08-28 10:09:44] === Stage: COMPLETE | Mode: deterministic ===
+[2025-08-28 10:09:44] Ability: output_payload | Server: COMMON
+[2025-08-28 10:09:44] Workflow complete.

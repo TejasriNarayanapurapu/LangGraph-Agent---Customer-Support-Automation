@@ -1,0 +1,7 @@
+{
+  "customer_name": "Alice Kumar",
+  "email": "alice.kumar@example.com",
+  "query": "Payment failed for order #ORD-7789 on 24 Aug, but money was deducted.",
+  "priority": "high",
+  "ticket_id": "TCK-2025-00891"
+}

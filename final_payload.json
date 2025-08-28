@@ -1,0 +1,64 @@
+{
+  "customer_name": "Alice Kumar",
+  "email": "alice.kumar@example.com",
+  "query": "Payment failed for order #ORD-7789 on 24 Aug, but money was deducted.",
+  "priority": "high",
+  "ticket_id": "TCK-2025-00891",
+  "intake_received": true,
+  "received_at": "2025-08-28 10:09:44",
+  "parsed": {
+    "has_order_id": false,
+    "order_id": null
+  },
+  "entities": {
+    "product": "payments",
+    "dates": []
+  },
+  "enrichment": {
+    "sla_hours": 4,
+    "active_sla": true,
+    "customer_tier": "GOLD"
+  },
+  "sla_risk": "high",
+  "clarifications": {
+    "requested_fields": [
+      "order_id"
+    ]
+  },
+  "clarification_reply": {
+    "order_id": "ORD-7789"
+  },
+  "stored_answer": {
+    "requested_fields": [
+      "order_id"
+    ]
+  },
+  "kb_results": [
+    {
+      "id": "KB-1042",
+      "title": "Payment captured but order failed \u2013 steps"
+    },
+    {
+      "id": "KB-2211",
+      "title": "Refund timelines for failed payments"
+    }
+  ],
+  "kb_attached": true,
+  "solution_score": 80,
+  "escalated_to": "L2-PAYMENTS",
+  "escalation_time": "2025-08-28 10:09:44",
+  "decision": "escalate",
+  "ticket_status": "In Progress",
+  "draft_response": "Hi Alice Kumar, we've escalated your case to a specialist. You'll hear from us within 2 business hours. Ref: TCK-2025-00891.",
+  "api_actions": [
+    "restore_order_if_exists",
+    "ensure_payment_reconciliation"
+  ],
+  "notifications": [
+    "email_customer",
+    "push_in_app"
+  ],
+  "output_ready": true,
+  "workflow_completed": true,
+  "completed_at": "2025-08-28 10:09:44"
+}
