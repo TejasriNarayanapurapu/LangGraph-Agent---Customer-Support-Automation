@@ -49,30 +49,15 @@ bash run_demo.sh
 ```bash
 pytest -q
 ```
+Example output
 
-## 📤 What to Submit
-- Push this repo to GitHub
-- Attach your latest resume
-- Record a 3–5 min video walking through:
-  - Stage modeling & non-determinism (DECIDE)
-  - State persistence (payload growth across stages)
-  - MCP orchestration (COMMON vs ATLAS)
-  - Demo run + logs
-- Email:
-  - **To:** santosh.thota@analytos.ai
-  - **Cc:** shashwat.shlok@analytos.ai, sasidhar.sunkesula@analytos.ai
-  - **Subject:** `Lang Graph Agent Task – <your name>`
+{
+  "customer_name": "Alice Kumar",
+  "query": "Payment failed for order #ORD-7789 on 24 Aug...",
+  "priority": "high",
+  "decision": "escalate",
+  "ticket_status": "In Progress"
+}
 
-## ✅ Evaluation Rubric (Suggested)
-1. Correct Stage Modeling (11/11 stages reflected)
-2. Proper State Persistence (state carried & enriched)
-3. MCP Integration (correct routing to COMMON/ATLAS)
-4. Non-deterministic Orchestration (DECIDE with threshold)
-5. Logs & Observability (stage/ability trace)
-6. Final Structured Output Payload
-7. Code Quality & README clarity
-
----
-
-### Notes
-- This reference implementation is dependency-light and **simulates** ATLAS/COMMON servers for demo repeatability. Replace stubs in `src/mcp/clients.py` with real MCP calls as needed.
+Author
+Tejasri Narayanapurapu
